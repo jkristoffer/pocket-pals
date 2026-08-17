@@ -6,7 +6,7 @@ Children manage real money through three playful jars—**Spending**, **Savings*
 
 ## Product status
 
-**Discovery and specification.** Implementation has not started and the technical stack has not been selected.
+**Game-first child UX locked; repository implementation pending.** The child experience is defined as a cozy game world rather than a finance dashboard, while the parent experience remains a conventional management layer.
 
 ## Product vision
 
@@ -18,14 +18,17 @@ Help children:
 
 ## Core weekly loop
 
-1. A child requests their weekly allowance.
-2. A parent approves the request.
-3. The child divides ten animated $1 coins among the three jars.
-4. The child records purchases, contributes to savings goals, and allocates money for giving.
-5. Healthy money habits progress an animal pal and unlock cosmetic rewards.
+1. A child enters their animal pal's Home World.
+2. The allowance mailbox signals that allowance can be requested.
+3. A parent approves the request.
+4. The child plays a coin-drop mini-game, dividing ten $1 coins among the three jars.
+5. Money activities produce pet reactions, XP, milestones, and cosmetic unlocks.
+6. The world changes over time as the child develops consistent habits.
 
 ## Product principles
 
+- Child mode should feel like a game, not a financial dashboard.
+- The Home World itself is the primary navigation system.
 - Reward habits, not wealth or sibling comparison.
 - Keep real money and virtual rewards clearly separate.
 - Make all balance changes traceable through an auditable ledger.
@@ -36,5 +39,6 @@ Help children:
 ## Documentation
 
 - [Living product specification](docs/product-spec.md)
+- [Confirmed child game UX](docs/child-game-ux.md)
 
-The specification records confirmed requirements, open decisions, domain rules, proposed screens, data entities, and acceptance criteria. It should remain the source of truth as discovery continues.
+The product specification records financial/domain requirements. The child game UX document is the implementation contract for the game-first child experience.
