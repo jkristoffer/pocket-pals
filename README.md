@@ -6,24 +6,32 @@ Children manage real money through three playful jars—**Spending**, **Savings*
 
 ## Product status
 
-**Game-first child UX locked; repository implementation pending.** The child experience is defined as a cozy game world rather than a finance dashboard, while the parent experience remains a conventional management layer.
+**Game-first MVP implemented.** Child mode is a cozy interactive Home World rather than a finance dashboard; parent mode remains a practical management layer.
 
-## Product vision
+## Run locally
 
-Help children:
+```bash
+npm install
+npm run dev
+```
 
-1. Understand how much money they have.
-2. Save toward things they genuinely want.
-3. Practise dividing money between spending, saving, and giving.
+Tests:
 
-## Core weekly loop
+```bash
+npm test
+```
 
-1. A child enters their animal pal's Home World.
-2. The allowance mailbox signals that allowance can be requested.
-3. A parent approves the request.
-4. The child plays a coin-drop mini-game, dividing ten $1 coins among the three jars.
-5. Money activities produce pet reactions, XP, milestones, and cosmetic unlocks.
-6. The world changes over time as the child develops consistent habits.
+The prototype persists data in browser `localStorage`. Parent mode uses demo PIN `2468`; production authentication is intentionally not implemented yet.
+
+## MVP loop
+
+1. Pick one of two child profiles and enter their Home World.
+2. Request weekly allowance from the animated mailbox.
+3. Parent approves the request in Parent Basecamp.
+4. Return to the child and play Coin Drop to divide ten $1 coins among Spend, Save, and Give.
+5. Open the Spending Pouch to record purchases or commit money to Save/Give.
+6. Complete Quest Board chores and receive rewards after parent approval.
+7. Watch wish progress, XP, collections, and the Adventure Book grow.
 
 ## Product principles
 
@@ -31,10 +39,8 @@ Help children:
 - The Home World itself is the primary navigation system.
 - Reward habits, not wealth or sibling comparison.
 - Keep real money and virtual rewards clearly separate.
-- Make all balance changes traceable through an auditable ledger.
 - Give children ownership while preserving parent oversight.
 - Never punish a child’s pet for missed activity or lower balances.
-- Use simple language, large controls, and playful visual feedback appropriate for ages 9–10.
 
 ## Documentation
 
